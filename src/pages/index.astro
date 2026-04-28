@@ -2,222 +2,361 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="One Room Schoolhouse | Piney Woods">
-	<!-- Hero Section -->
-	<section class="relative bg-gradient-to-b from-green-900 to-green-950 py-24 px-6">
-		<div class="max-w-4xl mx-auto text-center">
-			<h1 class="text-5xl md:text-6xl font-serif font-bold text-amber-50 mb-4">
-				One Room Schoolhouse
+<Layout title="Town Home Schoolhouse | Faith-Based Homeschool Enrichment">
+	<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+		<div class="absolute inset-0">
+			<img 
+				src="/schoolhouse-site/images/schoolhouse-exterior.png" 
+				alt="Town Home Schoolhouse" 
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-rustic-900/70"></div>
+		</div>
+		<div class="relative z-10 max-w-4xl mx-auto text-center px-6 py-32">
+			<h1 class="text-6xl md:text-8xl font-serif font-bold text-rustic-100 mb-4 tracking-wide">
+				Town Home
 			</h1>
-			<p class="text-2xl text-amber-200 italic mb-2">A Vintage Education</p>
-			<p class="text-xl text-green-100 max-w-2xl mx-auto mt-8">
-				A tried and true approach to a rich and meaningful education in a one-room setting.
+			<h2 class="text-4xl md:text-5xl font-serif text-rustic-300 mb-6">
+				Schoolhouse
+			</h2>
+			<p class="text-xl text-rustic-200 max-w-2xl mx-auto mt-8 leading-relaxed">
+				Building Faith, Knowledge & Character in a high-energy, interactive environment
 			</p>
-			<div class="flex gap-4 justify-center mt-10">
-				<a href="#schedule" class="bg-amber-600 text-white px-8 py-3 rounded font-semibold hover:bg-amber-700 transition">
-					View Schedule
+			<div class="flex gap-4 justify-center mt-12">
+				<a href="#programs" class="bg-rustic-500 text-white px-10 py-4 rounded font-semibold hover:bg-rustic-400 transition text-lg">
+					View Programs
 				</a>
-				<a href="#contact" class="bg-transparent border-2 border-amber-200 text-amber-200 px-8 py-3 rounded font-semibold hover:bg-amber-900/30 transition">
+				<a href="#contact" class="bg-transparent border-2 border-rustic-300 text-rustic-100 px-10 py-4 rounded font-semibold hover:bg-rustic-800/50 transition text-lg">
 					Contact Us
 				</a>
 			</div>
 		</div>
-	</section>
-
-	<!-- About Section -->
-	<section id="about" class="py-16 px-6 bg-stone-50">
-		<div class="max-w-4xl mx-auto">
-			<h2 class="text-3xl font-serif font-bold text-center text-green-900 mb-8">The Blessing of a One Room Setting</h2>
-			<div class="prose mx-auto text-green-800 text-center">
-				<p class="mb-6">
-					The small classroom sizes allow every student to get to know each other which forges 
-					friendships and builds community between families at a time in the world where face to 
-					face connections are a treasure.
-				</p>
-				<p>
-					The Christian environment means that each child is valued as an individual created by God 
-					for His good purposes and that children will be taught to treat one another how they 
-					want to be treated inside and outside of class.
-				</p>
-			</div>
+		<div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-rustic-300 animate-bounce">
+			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+			</svg>
 		</div>
 	</section>
-
-	<!-- Educator Section -->
-	<section class="py-16 px-6 bg-green-50">
-		<div class="max-w-4xl mx-auto">
-			<h2 class="text-3xl font-serif font-bold text-center text-green-900 mb-8">Your Christian Educator</h2>
-			<div class="bg-white p-8 rounded-lg shadow-md text-center">
-				<p class="text-lg text-green-800 italic mb-4">
-					Homesteader, patriot and homeschool family
-				</p>
-				<p class="text-green-700">
-					After many years of teaching experience in classrooms and homeschool settings, 
-					we opened a one room schoolhouse so that other children could benefit from a 
-					multi-age small classroom setting. Our desire is to be a resource to other 
-					homeschool and public school families, offering guidance to parents as well as 
-					children so that the whole family can benefit from a tried and true educational approach.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Schedule/Classes Section -->
-	<section id="schedule" class="py-16 px-6 bg-white">
-		<div class="max-w-5xl mx-auto">
-			<h2 class="text-3xl font-serif font-bold text-center text-green-900 mb-4">Schedule</h2>
-			<p class="text-center text-green-700 mb-12">Classes offered on Tuesdays and Thursdays during Fall and Spring semesters</p>
-			
-			<div class="grid md:grid-cols-2 gap-6">
-				<!-- Class Card 1 -->
-				<div class="bg-stone-50 p-6 rounded-lg border-l-4 border-green-700">
-					<h3 class="text-xl font-bold text-green-900 mb-2">Christian Worldview History</h3>
-					<p class="text-green-700 text-sm mb-3">Ages 5-17 | 4-year rotation</p>
-					<p class="text-green-600">Covers ancient, medieval, renaissance, and modern world history including church history throughout each of the ages.</p>
-				</div>
-				
-				<!-- Class Card 2 -->
-				<div class="bg-stone-50 p-6 rounded-lg border-l-4 border-green-700">
-					<h3 class="text-xl font-bold text-green-900 mb-2">Creationism Science</h3>
-					<p class="text-green-700 text-sm mb-3">Ages 5-17 | 4-year rotation</p>
-					<p class="text-green-600">Covers earth science, biology, chemistry and physics including biblical references to put science into the proper perspective in light of God's creation.</p>
-				</div>
-				
-				<!-- Class Card 3 -->
-				<div class="bg-stone-50 p-6 rounded-lg border-l-4 border-green-700">
-					<h3 class="text-xl font-bold text-green-900 mb-2">Indoor Life Skills</h3>
-					<p class="text-green-700 text-sm mb-3">Ages 5-17</p>
-					<p class="text-green-600">Modern homesteading class covering budgeting, nutrition, cooking, baking, meal prepping, time management, basic sewing, and entrepreneurialism.</p>
-				</div>
-				
-				<!-- Class Card 4 -->
-				<div class="bg-stone-50 p-6 rounded-lg border-l-4 border-green-700">
-					<h3 class="text-xl font-bold text-green-900 mb-2">Outdoor Life Skills</h3>
-					<p class="text-green-700 text-sm mb-3">Ages 5-17</p>
-					<p class="text-green-600">Tending to animals, gardening, wood working, fire making, basic survival skills and physical education.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Additional Programs -->
-	<section class="py-16 px-6 bg-amber-50">
-		<div class="max-w-4xl mx-auto">
-			<h2 class="text-3xl font-serif font-bold text-center text-green-900 mb-8">Additional Programs</h2>
-			<div class="grid md:grid-cols-2 gap-6">
-				<div class="bg-white p-6 rounded-lg shadow-sm">
-					<h3 class="text-lg font-bold text-green-800 mb-2">Early Readers Class</h3>
-					<p class="text-green-600 text-sm">Ages 3.5-7</p>
-					<p class="text-green-700 mt-2">Basic letter recognition, sounds, blending and writing. Each class ends with story time.</p>
-				</div>
-				<div class="bg-white p-6 rounded-lg shadow-sm">
-					<h3 class="text-lg font-bold text-green-800 mb-2">Mommy-and-Me Story Time</h3>
-					<p class="text-green-600 text-sm">All ages</p>
-					<p class="text-green-700 mt-2">Read a story together then hands-on time with farm animals. Babies under 1 attend free!</p>
-				</div>
-				<div class="bg-white p-6 rounded-lg shadow-sm">
-					<h3 class="text-lg font-bold text-green-800 mb-2">Homeschool Prep for Moms</h3>
-					<p class="text-green-600 text-sm">For new homeschool families</p>
-					<p class="text-green-700 mt-2">Covers homeschool styles, curriculum, scheduling, teaching to your child's bent, and creating routines.</p>
-				</div>
-				<div class="bg-white p-6 rounded-lg shadow-sm">
-					<h3 class="text-lg font-bold text-green-800 mb-2">Photography Sessions</h3>
-					<p class="text-green-600 text-sm">Available</p>
-					<p class="text-green-700 mt-2">Classic schoolhouse setting with antique props for first day, seasonal, sports or senior photos.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Enrollment Info -->
-	<section class="py-16 px-6 bg-green-900 text-green-50">
+	<section class="py-24 px-6 bg-rustic-50">
 		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl font-serif font-bold mb-6">Enrollment & Course Fees</h2>
-			<div class="grid md:grid-cols-3 gap-8 mb-10">
-				<div>
-					<p class="text-amber-300 text-sm uppercase tracking-wide mb-1">Enrollment Fee</p>
-					<p class="text-3xl font-bold">$20</p>
-					<p class="text-green-300 text-sm">per family (one-time)</p>
+			<div class="bg-rustic-100 p-12 rounded-lg shadow-lg border-2 border-rustic-200">
+				<h2 class="text-3xl font-serif font-bold text-rustic-800 mb-8">Mission & Vision</h2>
+				<p class="text-rustic-700 text-lg mb-8 leading-relaxed">
+					To enrich the homeschool journey by building faith, knowledge, and character in a 
+					high-energy, interactive environment that fosters genuine camaraderie and a lifelong love of discovery.
+				</p>
+				<p class="text-rustic-600 italic border-l-4 border-rustic-500 pl-6 py-4 bg-rustic-50">
+					"...whatever things are true, whatever things are noble, whatever things are just, 
+					whatever things are pure, whatever things are lovely, whatever things are of good report..." 
+					<strong>— Philippians 4:8</strong>
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="py-24 px-6 bg-rustic-200">
+		<div class="max-w-6xl mx-auto">
+			<div class="grid md:grid-cols-2 gap-16 items-center">
+				<div class="relative">
+					<img 
+						src="/schoolhouse-site/dist/images/title.png"
+						alt="Title" 
+						class="rounded-lg shadow-2xl w-full"
+					/>
+					<div class="absolute -bottom-4 -right-4 w-full h-full border-4 border-rustic-600 rounded-lg -z-10"></div>
 				</div>
 				<div>
-					<p class="text-amber-300 text-sm uppercase tracking-wide mb-1">Per Class</p>
-					<p class="text-3xl font-bold">$28</p>
-					<p class="text-green-300 text-sm">per month ($7 per class)</p>
-				</div>
-				<div>
-					<p class="text-amber-300 text-sm uppercase tracking-wide mb-1">Multi-Class</p>
-					<p class="text-3xl font-bold">$20</p>
-					<p class="text-green-300 text-sm">per month when enrolled in multiple classes</p>
+					<h2 class="text-3xl font-serif font-bold text-rustic-900 mb-6">The Advantage of Our Small Classroom</h2>
+					<p class="text-rustic-700 mb-6 text-lg">
+						At Town Home Schoolhouse, we believe face-to-face connections are a treasure. 
+						By intentionally capping our class, we offer a personalized, relational approach 
+						to education that simply isn't possible in larger institutional settings.
+					</p>
+					<ul class="space-y-4">
+						<li class="flex items-start bg-rustic-50 p-4 rounded">
+							<span class="text-rustic-600 mr-3 text-xl">✦</span>
+							<span><strong class="text-rustic-800">Deepening Community:</strong> Small class sizes ensure every student is seen, known, and valued.</span>
+						</li>
+						<li class="flex items-start bg-rustic-50 p-4 rounded">
+							<span class="text-rustic-600 mr-3 text-xl">✦</span>
+							<span><strong class="text-rustic-800">Whole Person:</strong> We view each child as an individual created by God for His good purposes.</span>
+						</li>
+						<li class="flex items-start bg-rustic-50 p-4 rounded">
+							<span class="text-rustic-600 mr-3 text-xl">✦</span>
+							<span><strong class="text-rustic-800">Character:</strong> Addressed daily because it honors God, not just for academics.</span>
+						</li>
+						<li class="flex items-start bg-rustic-50 p-4 rounded">
+							<span class="text-rustic-600 mr-3 text-xl">✦</span>
+							<span><strong class="text-rustic-800">Spiritual Growth:</strong> Children thrive when growing in understanding of Christ.</span>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<p class="text-green-200 italic">
-				Classes are a flat rate per month even if students miss classes. 
-				Limited make-up classes offered.
+		</div>
+	</section>
+
+	<!-- Programs Overview -->
+	<section id="programs" class="py-24 px-6 bg-rustic-100">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-4xl font-serif font-bold text-center text-rustic-900 mb-4">Our Programs</h2>
+			<p class="text-center text-rustic-600 mb-4 text-lg">
+				Once-a-week classes for ages 6–18
+			</p>
+			<p class="text-center text-rustic-700 mb-16">
+				Hands-on learning through movement, teamwork, and creative application.
+			</p>
+			
+			<!-- Younger Students - Ages 6-10 -->
+			<div class="mb-16">
+				<h3 class="text-2xl font-bold text-rustic-800 mb-8 text-center bg-rustic-200 inline-block px-8 py-2 rounded-full mx-auto">
+					Ages 6–10 | Tuesdays
+				</h3>
+				<div class="space-y-6">
+					<!-- PPC Phonics -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									PPC - Phonics, Comprehension & Creativity
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Tuesdays 1:00 PM – 2:00 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$30/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Strengthening reading skills through multi-sensory approach—active play, storytelling, and hands-on crafts.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Phonics Rules</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Reading Comprehension</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Storytelling</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Creative Crafts</span>
+						</div>
+					</div>
+					
+					<!-- Math Madness 6-10 -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									Math Madness
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Tuesdays 2:00 PM – 3:00 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$30/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Energetic, multi-sensory math—movement, teamwork, and creative play to build foundational skills.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Real-World Math</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Math Relays</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Team Challenges</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Mnemonic Devices</span>
+						</div>
+					</div>
+					
+					<!-- Home Ec & Ag 6-10 -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									Home Economics & Agriculture
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Tuesdays 3:00 PM – 5:00 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$60/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Mastering essential life skills through practical, hands-on application—outdoors and indoors.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Cooking & Preservation</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Sewing & Textiles</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Gardening</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Basic Woodworking</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Older Students - Ages 10-18 -->
+			<div class="mb-16">
+				<h3 class="text-2xl font-bold text-rustic-800 mb-8 text-center bg-rustic-300 inline-block px-8 py-2 rounded-full mx-auto">
+					Ages 10–18 | Thursdays
+				</h3>
+				<div class="space-y-6">
+					<!-- Writing, Debate & Storytelling -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									Writing, Debate & Storytelling
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Thursdays 12:45 PM – 2:30 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$50/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Comprehensive language arts—IEW-style writing, structured debate, and compelling storytelling.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Writing Foundations</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Stylistic Techniques</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Structured Debate</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Public Speaking</span>
+						</div>
+					</div>
+					
+					<!-- Math Madness 10-18 -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									 Math Madness
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Thursdays 2:30 PM – 3:15 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$25/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Dynamic, interactive math—movement, strategic teamwork, and hands-on application.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Financial Literacy</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Budget & Interest</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Logic Scavenger Hunts</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Math Tournaments</span>
+						</div>
+					</div>
+					
+					<!-- U.S. Geography -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									U.S. Geography: Fun & Games
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Thursdays 3:15 PM – 4:00 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$25/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Interactive geography—mapping, state quizzes, and competitive gameplay across the 50 states.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">States & Capitals</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">History & Culture</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Interactive Mapping</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">State Notebooks</span>
+						</div>
+					</div>
+					
+					<!-- Home Ec & Ag 10-18 -->
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+						<div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+							<div>
+								<h4 class="text-xl font-bold text-rustic-800 flex items-center gap-2">
+									Home Economics & Agriculture
+								</h4>
+								<p class="text-rustic-500 text-sm mt-1">Thursdays 4:00 PM – 6:00 PM</p>
+							</div>
+							<span class="bg-rustic-500 text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">$60/month</span>
+						</div>
+						<p class="text-rustic-600 mb-4">Mastering essential life skills through practical application and independent problem-solving.</p>
+						<div class="flex flex-wrap gap-2">
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Culinary Science</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Machine & Hand Sewing</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Carpentry Projects</span>
+							<span class="bg-rustic-100 text-rustic-700 px-3 py-1 rounded-full text-xs">Financial Literacy</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Our Approach - Rustic Box -->
+			<div class="bg-rustic-800 text-rustic-100 p-12 rounded-lg">
+				<h3 class="text-2xl font-bold text-rustic-200 mb-8 text-center">Our Approach</h3>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="text-center">
+						<h4 class="font-bold text-rustic-200 mb-2">Multi-Sensory</h4>
+						<p class="text-rustic-400">Mock stores, relays, gardening, and crafts.</p>
+					</div>
+					<div class="text-center">
+						<h4 class="font-bold text-rustic-200 mb-2">Connection</h4>
+						<p class="text-rustic-400">10-minute recess and snack break.</p>
+					</div>
+					<div class="text-center">
+						<h4 class="font-bold text-rustic-200 mb-2">Family-Focused</h4>
+						<p class="text-rustic-400">10% sibling discount.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Enrollment -->
+	<section class="py-16 px-6 bg-rustic-700">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-3xl font-serif font-bold text-rustic-100 mb-6">Enrollment</h2>
+			<p class="text-rustic-200 mb-4 text-lg">
+				Classes meet once a week during Fall and Spring semesters.
+			</p>
+			<p class="text-rustic-100 text-xl">
+				<strong>First child:</strong> Full tuition &nbsp;•&nbsp; 
+				<strong>Each additional sibling:</strong> 10% discount
 			</p>
 		</div>
 	</section>
 
 	<!-- Contact Section -->
-	<section id="contact" class="py-16 px-6 bg-stone-100">
+	<section id="contact" class="py-24 px-6 bg-rustic-100">
 		<div class="max-w-3xl mx-auto">
-			<h2 class="text-3xl font-serif font-bold text-center text-green-900 mb-4">Contact Us</h2>
-			<p class="text-center text-green-700 mb-8">Reach out to enroll or schedule a tour!</p>
+			<h2 class="text-3xl font-serif font-bold text-center text-rustic-900 mb-4">Contact Us</h2>
+			<p class="text-center text-rustic-600 mb-10">Ready to join our homeschool community?</p>
 			
 			<form action="https://formspree.io/f/mkoklobn" method="POST" class="space-y-6" id="contact-form">
 				<div>
-					<label for="name" class="block text-green-800 font-medium mb-2">Your Name</label>
+					<label for="name" class="block text-rustic-800 font-medium mb-2">Your Name</label>
 					<input 
 						type="text" 
 						id="name" 
 						name="name" 
 						required
-						class="w-full px-4 py-3 border border-green-300 rounded focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none bg-white"
+						class="w-full px-4 py-3 border-2 border-rustic-300 rounded focus:ring-2 focus:ring-rustic-500 focus:border-rustic-500 outline-none bg-white"
 						placeholder="Your name"
 					>
 				</div>
 				
 				<div>
-					<label for="email" class="block text-green-800 font-medium mb-2">Email Address</label>
+					<label for="email" class="block text-rustic-800 font-medium mb-2">Email Address</label>
 					<input 
 						type="email" 
 						id="email" 
 						name="email" 
 						required
-						class="w-full px-4 py-3 border border-green-300 rounded focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none bg-white"
+						class="w-full px-4 py-3 border-2 border-rustic-300 rounded focus:ring-2 focus:ring-rustic-500 focus:border-rustic-500 outline-none bg-white"
 						placeholder="your@email.com"
 					>
 				</div>
 				
 				<div>
-					<label for="subject" class="block text-green-800 font-medium mb-2">Subject</label>
+					<label for="subject" class="block text-rustic-800 font-medium mb-2">Subject</label>
 					<select 
 						id="subject" 
 						name="subject"
-						class="w-full px-4 py-3 border border-green-300 rounded focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none bg-white"
+						class="w-full px-4 py-3 border-2 border-rustic-300 rounded focus:ring-2 focus:ring-rustic-500 focus:border-rustic-500 outline-none bg-white"
 					>
 						<option value="">Select a topic...</option>
 						<option value="enrollment">Enrollment Questions</option>
+						<option value="programs">Program Information</option>
 						<option value="tour">Schedule a Tour</option>
-						<option value="classes">Class Information</option>
 						<option value="other">Other</option>
 					</select>
 				</div>
 				
 				<div>
-					<label for="message" class="block text-green-800 font-medium mb-2">Message</label>
+					<label for="message" class="block text-rustic-800 font-medium mb-2">Message</label>
 					<textarea 
 						id="message" 
 						name="message" 
 						rows="5"
 						required
-						class="w-full px-4 py-3 border border-green-300 rounded focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none bg-white"
+						class="w-full px-4 py-3 border-2 border-rustic-300 rounded focus:ring-2 focus:ring-rustic-500 focus:border-rustic-500 outline-none bg-white"
 						placeholder="Tell us about your family and homeschool needs..."
 					></textarea>
 				</div>
 				
 				<button 
 					type="submit" 
-					class="w-full bg-green-700 text-white py-3 px-6 rounded font-semibold hover:bg-green-800 transition"
+					class="w-full bg-rustic-600 text-white py-4 px-6 rounded font-semibold hover:bg-rustic-500 transition text-lg"
 				>
 					Send Message
 				</button>
@@ -226,12 +365,11 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<!-- Footer -->
-	<footer class="bg-green-950 text-green-200 py-12 px-6">
+	<footer class="bg-rustic-900 text-rustic-300 py-12 px-6">
 		<div class="max-w-4xl mx-auto text-center">
-			<p class="text-amber-200 mb-4">&copy; 2026 One Room Schoolhouse</p>
-			<p class="text-sm text-green-400">
-				Carthage, Harrison County, Texas
-			</p>
+			<p class="text-2xl font-serif text-rustic-200 mb-4">Town Home Schoolhouse</p>
+			<p class="text-rustic-400 mb-2">Carthage, Harrison County, Texas</p>
+			<p class="text-rustic-500 text-sm mt-6">&copy; 2026 Town Home Schoolhouse. All rights reserved.</p>
 		</div>
 	</footer>
 

@@ -2,4 +2,14 @@
 
 @theme {
   --font-serif: "Crimson Text", Georgia, serif;
+  --color-rustic-50: #faf6f1;
+  --color-rustic-100: #f5ede3;
+  --color-rustic-200: #e8d9c8;
+  --color-rustic-300: #d4c1a8;
+  --color-rustic-400: #b8a384;
+  --color-rustic-500: #9c8566;
+  --color-rustic-600: #7d6a52;
+  --color-rustic-700: #5e5040;
+  --color-rustic-800: #4a3f32;
+  --color-rustic-900: #3d332a;
 }
