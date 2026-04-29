@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://logan.github.io',
-  base: '/schoolhouse-site/',
+  site: 'https://www.townhomeschoolhouse.com',
   vite: {
     plugins: [tailwindcss()]
   }
